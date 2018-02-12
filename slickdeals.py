@@ -26,6 +26,7 @@ playFile.close()
 
 #beautiful soup
 noStarch = bs4.BeautifulSoup(res.text)
+print(noStarch.title.string)
 
 
 #look for price line tag id and get listprice, itemPercentOff, title, itemprice

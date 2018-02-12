@@ -1,0 +1,15 @@
+
+
+#Use Indico's public API for ML
+import indicoio
+indicoio.config.api_key = "6e20bd4ee1b0be47f25d0f227578fd14"
+
+def emotion(line):
+    x = indicoio.emotion(line)
+    for i in x:
+        print(i + ": "+ str(x[i]))
+
+
+emotion("I'm starving")
+
+# add this to slickdeals web app?
